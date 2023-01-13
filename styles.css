@@ -1,0 +1,29 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1 {
+    overflow-wrap: break-word;
+}
