@@ -134,6 +134,7 @@ hr {
 .creator-name:hover, h1:hover {
     cursor: pointer;
     color: var(--Cyan);
+    transition: .5s ease;
 }
 
 .container {
@@ -177,6 +178,12 @@ hr {
     opacity: .3;
 }
 
-@media (max-width: 375) {
-    
+@media (max-width: 375px) {
+    .card {
+        width: 340px;
+    }
+
+    .time {
+        padding-left: 121px;
+    }
 }
