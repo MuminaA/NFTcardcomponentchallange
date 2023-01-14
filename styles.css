@@ -69,10 +69,68 @@ p > .break::before {
     white-space: pre;
 }
 
-.price-date {
-    display: flex;
+/*.price-date {
+    white-space: nowrap;
+}*/
+
+.price {
+    font-size: .9em;
+    color: var(--Cyan);
+    font-weight: 600px;
 }
 
-div > .time {
-    padding-left: 150px;
+.time {
+    font-size: .9em;
+    padding-left: 131px;
+}
+
+div > .price, .time, .ethereum-icon, .clock-icon {
+    display: inline-block;
+}
+
+.ethereum-icon {
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+    block-size: 15px;
+}
+
+.clock-icon {
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+    block-size: 15px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 0.2em;
+    background-color: var(--line);
+    height: 1px;
+    border: 0 none;
+}
+
+.avatar-artist {
+    white-space: nowrap;
+}
+
+.avatar-img, .artist {
+    display: inline-block;
+}
+
+.avatar-img {
+    block-size: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 9px;
+}
+
+.artist {
+    padding-left: 12px;
+    font-size: .9em;
+}
+
+.creator-name {
+    color: var(--white);
 }
