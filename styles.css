@@ -69,10 +69,6 @@ p > .break::before {
     white-space: pre;
 }
 
-/*.price-date {
-    white-space: nowrap;
-}*/
-
 .price {
     font-size: .9em;
     color: var(--Cyan);
@@ -133,4 +129,54 @@ hr {
 
 .creator-name {
     color: var(--white);
+}
+
+.creator-name:hover, h1:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.container {
+    position: relative;
+}
+
+.container:hover {
+    display: block;
+    cursor: pointer;
+}
+
+.view {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    top: 43%;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+}
+
+.container:hover .view {
+    opacity: 5;
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--Cyan);
+    border-radius: 7px 7px;
+}
+
+.container:hover .color-overlay {
+    opacity: .3;
+}
+
+@media (max-width: 375) {
+    
 }
